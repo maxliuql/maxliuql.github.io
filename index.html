@@ -31,8 +31,13 @@
 			<h2>Hello, this is the personal home page of Max Liu who loves programming!</h2>
 			<p>个人博客页正在开发中，请敬请期待！</p>
 			<p id="rectext">近期作品：
-			<span>暂未发布任何作品</span>
+			<span><a href="../bomb-simulator/index.htm">拆弹模拟器</a>&nbsp;<a href="https://github.com/maxliuql/Tic-tac-toe-cpp" title="C++ Tic-tac-toe">C++井字棋</a>&nbsp;<a href="https://github.com/maxliuql/2D-maze-cpp">C++2D迷宫</a></span>
 			</span>（每月更新）</span></p>
 		</div>
+		<script>
+			if(location.href.indexOf('file:///')==0) {
+				document.getElementsByTagName('a')[0].href.splice(0,2);
+			}
+		</script>
 	<body>
 </html>
